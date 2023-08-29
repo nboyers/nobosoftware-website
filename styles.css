@@ -19,10 +19,10 @@ body, h1, h2, ul, p {
   }
   
   /* Style the navigation menu */
-  nav ul {
+/* Style the navigation menu */
+nav ul {
     background-color: #333;
     overflow: hidden;
-    color: white;
   }
   
   nav ul li {
@@ -30,6 +30,12 @@ body, h1, h2, ul, p {
     display: inline;
     padding: 14px 16px;
   }
+  
+  nav ul li a {
+    color: teal;  /* Changed from white to teal */
+    text-decoration: none;
+  }
+  
   
   /* Style the section */
   section {
