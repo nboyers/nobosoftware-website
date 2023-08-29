@@ -32,10 +32,10 @@ nav ul {
   }
   
   nav ul li a {
-    color: teal;  /* Changed from white to teal */
+    color: whitesmoke;  /* Changed from white to teal */
     text-decoration: none;
   }
-  
+
   
   /* Style the section */
   section {
