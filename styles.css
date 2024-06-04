@@ -20,18 +20,26 @@ body {
 
 .header, .nav, .main-content, .footer {
   margin-bottom: 20px;
-  padding: 20px;
   border-radius: 5px;
 }
 
+/* Improve the Header */
 .header {
   background-color: #2C3E50;
-  color: #fff;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 40px 0;
   text-align: center;
 }
 
+/* Enhance the Navigation */
 .nav {
   background-color: #34495E;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-list {
@@ -41,33 +49,123 @@ body {
 }
 
 .nav-item a {
-  color: #fff;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px 20px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
+.nav-item a:hover {
+  background-color: #2C3E50;
+}
+
+/* Revamp the Main Content */
 .main-content {
-  background-color: #fff;
+  background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
 }
 
 .section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.app-list {
-  list-style: none;
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.footer {
-  background-color: #2C3E50;
-  color: #fff;
+/* Our Apps Section */
+.app-list-container {
   text-align: center;
 }
-#animatedBox {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.app-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.app-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #34495E;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.app-link:hover {
+  color: #2C3E50;
+}
+
+.store-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-item h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.project-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #34495E;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2C3E50;
+}
+
+/* Optimize the Footer */
+.footer {
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }

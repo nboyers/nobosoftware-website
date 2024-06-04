@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nobos Software LLC</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-
   <div class="wrapper">
     <header class="header">
       <h1>Nobos Software LLC</h1>
@@ -17,23 +17,51 @@
       <ul class="nav-list">
         <li class="nav-item"><a href="#about">About Us</a></li>
         <li class="nav-item"><a href="#apps">Our Apps</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
         <li class="nav-item"><a href="#contact">Contact</a></li>
         <li class="nav-item"><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </nav>
+
     <main class="main-content">
       <section id="about" class="section">
         <h2>About Us</h2>
-        <p>We are Nobos Software LLC, a leading software publishing company.</p>
+        <p>At Nobos Software LLC, we specialize in developing high-quality iOS and Android apps backed by powerful AWS solutions. Our mission is to deliver innovative software that meets the needs of the modern world.</p>
       </section>
 
       <section id="apps" class="section">
         <h2>Our Apps</h2>
-        <p>Check out our apps on:</p>
-        <ul class="app-list">
-          <li><a href="https://play.google.com/store/apps/developer?id=Nobos+Software+LLC" target="_blank">Google Play</a></li>
-          <li><a href="https://apps.apple.com/developer/nobos-software-llc/idYourAppleID" target="_blank">Apple App Store</a></li>
-        </ul>
+        <div class="app-list-container">
+          <p>Explore our apps on:</p>
+          <div class="app-list">
+            <a href="https://play.google.com/store/apps/developer?id=Nobos+Software+LLC" target="_blank" class="app-link">
+              <img src="google-play-logo.png" alt="Google Play" class="store-logo">
+              <span>Google Play</span>
+            </a>
+            <a href="https://apps.apple.com/us/developer/nobos-software-llc/id1587589207" target="_blank" class="app-link">
+              <img src="apple-store-logo.png" alt="Apple App Store" class="store-logo">
+              <span>Apple App Store</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="rpn-google.PNG" alt="Android RPN Calculator app">
+            <h3>RPN Calculator </h3>
+            <p>RPN Calculator by Nobos Software LLC is a powerful and efficient reverse Polish notation (RPN) calculator designed for professionals and students. It simplifies complex calculations and supports a wide range of mathematical functions, making it an essential tool for engineers, scientists, and math enthusiasts. The app features a user-friendly interface, quick access to common functions, and the ability to handle large calculations with ease. Experience the precision and efficiency of RPN with this robust calculator app.</p>
+            <a href="https://play.google.com/store/apps/details?id=frent.nobos.rpncalc" class="btn">Learn More</a>
+          </div>
+          <div class="project-item">
+            <img src="ios-brewies.PNG" alt="iOS Coffee and breweries finder app">
+            <h3>Brewies</h3>
+            <p>Brewies is a mobile application designed to help coffee and brewery enthusiasts discover local and lesser-known coffee shops and breweries. The app provides location-based search, detailed reviews, ratings, and the ability to save favorite spots. Users can explore unique and authentic experiences beyond mainstream options, making Brewies a perfect companion for those looking to delve into the local beverage scene. With a user-friendly interface and personalized journeys, Brewies offers a comprehensive guide for coffee and beer lovers.</p>
+            <a href="https://apps.apple.com/kg/app/brewies/id6450864433" class="btn">Learn More</a>
+          </div>
+        </div>
       </section>
 
       <section id="contact" class="section">
@@ -43,10 +71,9 @@
     </main>
 
     <footer class="footer">
-      <p>Copyright 2023, Nobos Software LLC</p>
-      <a href="tos.html">Privacy Policy</a>
+      <p>© 2024, Nobos Software LLC. All rights reserved.</p>
+      <a href="tos.html">Terms of Service</a>
     </footer>
   </div>
-
 </body>
 </html>
