@@ -18,7 +18,7 @@ function App() {
       <div className="hero-section">
         <div className="hero-content">
           <h1>Nobos Software LLC</h1>
-          <p>Publishing iOS and Android apps with Cloud hosting for Minecraft</p>
+          <p>Specializing in the development of iOS and Android applications, with robust cloud hosting solutions.</p>
           <button className="services-button">VIEW SERVICES</button>
         </div>
       </div>
