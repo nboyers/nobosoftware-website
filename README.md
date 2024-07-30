@@ -1,9 +1,4 @@
-Sure! Here is an updated version of the `README.md` tailored for your LLC company website:
-
-### Updated `README.md`
-
-```markdown
-# Nobos Software LLC Website
+## Nobos Software LLC Website
 
 Welcome to the official GitHub repository for the Nobos Software LLC website. This project is built using React and showcases our expertise in iOS and Android application development, as well as our robust cloud hosting solutions. The site features an overview of our services, information about our products, and a contact page.
 
@@ -35,8 +30,7 @@ Nobos Software LLC is dedicated to providing high-quality iOS and Android applic
 Visit our website to explore our services, view the apps we have created, and get in touch with us for any inquiries or support.
 
 ## Project Structure
-
-```sh
+```
 nobos-software-llc/
 ├── public/
 │   ├── assets/
@@ -85,4 +79,4 @@ For any inquiries, support, or more information about our services, please visit
 ---
 
 © 2024 Nobos Software LLC. All rights reserved.
-```
+
