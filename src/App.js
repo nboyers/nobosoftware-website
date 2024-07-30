@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Route, Routes, useLocation } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-// import About from './pages/About';
+
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
