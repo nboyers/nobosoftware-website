@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
 import './App.css';
 import { logPageView } from './gtag';
 
@@ -22,7 +23,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/hosting" element={<HeroSection />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
