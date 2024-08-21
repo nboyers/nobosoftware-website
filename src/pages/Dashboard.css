@@ -1,0 +1,136 @@
+/* General Styling for the Dashboard */
+.dashboard-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto; /* Allow table to scroll horizontally */
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  
+  tbody tr {
+    background-color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #eef2f7;
+  }
+  
+  td {
+    padding: 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Note Styling */
+  .note {
+    font-size: 1rem;
+    background-color: #fffbcc;
+    padding: 15px;
+    border-left: 5px solid #ffc107;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Message */
+  .footer-message {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    thead th, tbody td {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    /* Make table scrollable on smaller screens */
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    tbody tr {
+      display: block;
+      width: 100%;
+    }
+  
+    tbody td {
+      display: inline-block;
+      min-width: 150px; /* Ensure table cells take up enough width */
+    }
+  
+    /* Stack the columns vertically on very small screens */
+    @media (max-width: 480px) {
+      tbody tr {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      tbody td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 10px;
+      }
+    }
+  }
+  
