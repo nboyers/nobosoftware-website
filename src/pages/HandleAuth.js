@@ -59,7 +59,7 @@ const HandleAuth = ({ setIsAuthenticated }) => {
           window.history.replaceState({}, document.title, '/');
 
           // Navigate to dashboard after authentication
-          navigate('/dashboard');
+          navigate('/');
 
         } else {
           throw new Error('Tokens are missing from the response');
