@@ -9,26 +9,21 @@ import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import Waitlist from './components/HeroSection';
 import Footer from './components/Footer';
-import PrivacyPolicy from './pages/PrivacyPolicy'; 
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import TOS from './pages/TOS';
 import './App.css';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Check sessionStorage for tokens when the app loads
   useEffect(() => {
     const accessToken = sessionStorage.getItem('accessToken');
-    console.log('Access Token in sessionStorage:', accessToken); // Debugging token in sessionStorage
     if (accessToken) {
       setIsAuthenticated(true);
-      console.log('User is authenticated'); // Confirm user authentication
     }
   }, []);
 
   const handleSignOut = () => {
-    // Clear session storage and log the user out
-    console.log('Signing out...');
     sessionStorage.removeItem('accessToken');
     sessionStorage.removeItem('idToken');
     setIsAuthenticated(false);
@@ -36,25 +31,27 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navbar isAuthenticated={isAuthenticated} onSignOut={handleSignOut} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/auth" element={<HandleAuth setIsAuthenticated={setIsAuthenticated} />} />
-        <Route path="/waitlist" element={<Waitlist />} />
-        <Route path="/tos" element={<TOS />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute isAuthenticated={isAuthenticated}>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
-      <Footer />
+      <Router>
+        <Navbar isAuthenticated={isAuthenticated} onSignOut={handleSignOut} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/auth" element={<HandleAuth setIsAuthenticated={setIsAuthenticated} />} />
+          <Route path="/waitlist" element={<Waitlist />} />
+          <Route path="/tos" element={<TOS />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute isAuthenticated={isAuthenticated}>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 };

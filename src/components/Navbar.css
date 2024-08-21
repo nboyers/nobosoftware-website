@@ -87,7 +87,13 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
+  text-decoration: none; /* Remove underline */
 }
+
+.navbar-brand:hover {
+  color: #007bff; /* Change color on hover */
+}
+
 
 .navbar-menu {
   display: flex;
