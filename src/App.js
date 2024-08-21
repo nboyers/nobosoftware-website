@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
+
         <Navbar isAuthenticated={isAuthenticated} onSignOut={handleSignOut} />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -51,7 +51,6 @@ const App = () => {
           />
         </Routes>
         <Footer />
-      </Router>
     </div>
   );
 };
