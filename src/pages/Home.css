@@ -1,78 +1,87 @@
-.contact-section {
+/* Home Section */
+.home-section {
+  position: relative;
+  height: 100vh;
   background: url('/src/assets/background.jpeg') no-repeat center center;
   background-size: cover;
-  height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact-content {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 2em;
-  border-radius: 8px;
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  transform: translateY(10rem); /* Move the box 100px down */
   text-align: center;
+  color: #fff;
+  max-width: 700px;
+  padding: 40px 20px; /* Increase padding for better spacing */
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.home-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.home-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #007bff; /* Blue color */
   color: white;
-  max-width: 600px;
-  width: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.contact-content h1 {
-  margin-bottom: 1em;
-  font-size: 2.5em;
+.home-button:hover {
+  background-color: #2fda68;
+  transform: translateY(-3px);
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.contact-form label {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: 1.2em;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  margin-top: 5px;
-  font-size: 1em;
-}
-
-.contact-form button {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.error {
-  color: red;
-  font-size: 0.8em;
-  margin-top: 5px;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .contact-section {
-    height: auto;
-    padding: 40px 0;
+  .home-title {
+    font-size: 2.3rem;
   }
-  .contact-content {
-    padding: 1em;
+
+  .home-subtitle {
+    font-size: 1.1rem;
   }
-  .contact-content h1 {
-    font-size: 2em;
+
+  .home-description {
+    font-size: 1rem;
   }
-  .contact-form label {
-    font-size: 1em;
+
+  .home-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
   }
 }

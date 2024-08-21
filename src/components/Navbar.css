@@ -81,26 +81,27 @@
   padding: 15px 20px;
   background-color: white;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  margin-right: auto; /* Pushes the brand to the left */
 }
 
 .navbar-brand:hover {
   color: #007bff; /* Change color on hover */
 }
 
-
 .navbar-menu {
   display: flex;
-  align-items: center; /* Ensure menu items are aligned vertically in the center */
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center; /* Vertically align menu items */
 }
 
 .navbar-menu li {
@@ -119,10 +120,9 @@
   color: #007bff;
 }
 
+/* Ensure the login button aligns with the menu items */
 .navbar-login {
   margin-left: 20px;
-  display: flex; /* Flexbox for the login button */
-  align-items: center; /* Align the button vertically in the center */
 }
 
 .login-link {
@@ -149,46 +149,34 @@
 }
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .contact-section {
-    height: auto;
-    padding: 40px 0;
-  }
-
-  .contact-content {
-    padding: 1em;
-  }
-
-  .contact-content h1 {
-    font-size: 2em;
-  }
-
-  .contact-form label {
-    font-size: 1em;
-  }
-
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center; /* Center the entire navbar content */
+    align-items: left; /* Ensure items are aligned vertically in the center */
+    width: 100%;
   }
 
   .navbar-menu {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row; /* Keep menu items in a row */
+    justify-content: center; /* Center the menu items */
+    align-items: center; /* Vertically align the items */
+    width: auto; /* Allow the menu to fit its content */
   }
 
   .navbar-menu li {
-    margin: 0.5em 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-menu li a {
-    width: 100%;
-    padding: 10px 0;
+    margin: 0 10px; /* Adjust spacing between the items */
+    text-align: left;
   }
 
   .navbar-login {
-    margin: 1em 0;
+    margin-left: 20px; /* Space between the menu and the login button */
+  }
+
+  .login-link {
+    padding: 10px;
+    text-align: left;
   }
 }
+

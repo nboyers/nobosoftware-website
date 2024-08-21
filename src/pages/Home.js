@@ -1,19 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Home.css';
+import './Home.css'; // Make sure this CSS file is linked
 
-const Home = () => {
+const HomeSection = () => {
   return (
-    <div className="hero-section">
-      <div className="hero-content">
-        <h1>Nobos Software LLC</h1>
-        <p>Specializing in the development of iOS and Android applications, with robust cloud hosting solutions.</p>
-        <Link to="/services">
-          <button className="services-button">VIEW SERVICES</button>
-        </Link>
+    <section className="home-section">
+      <div className="home-overlay">
+        <div className="home-content">
+          <h1 className="home-title">Welcome to Nobos Software</h1>
+          <p className="home-subtitle">Innovative solutions for mobile and cloud development.</p>
+          <p className="home-description">
+            Delivering high-quality iOS, Android applications, and scalable cloud hosting services.
+          </p>
+          <a href="/services" className="home-button">Explore Our Services</a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Home;
+export default HomeSection;
