@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const HandleAuth = ({ setIsAuthenticated }) => {
+const HandleAuth = ({ setIsAuthenticated, domain }) => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true); // Track loading state
   const [error, setError] = useState(null); // Track error state
@@ -15,7 +15,11 @@ const HandleAuth = ({ setIsAuthenticated }) => {
     const exchangeCodeForTokens = async (code) => {
       const clientId = process.env.REACT_APP_COGNITO_CLIENT_ID;
       const redirectUri = process.env.REACT_APP_COGNITO_REDIRECT_URI;
-      const domain = process.env.REACT_APP_COGNITO_DOMAIN;
+      const domain = domain || process.env.REACT_APP_COGNITO_DOMAIN;
+
+      console.log('Client ID:', clientId);
+      console.log('Redirect URI:', redirectUri);
+      console.log('Domain:', domain);
 
       const data = {
         grant_type: 'authorization_code',
@@ -72,7 +76,7 @@ const HandleAuth = ({ setIsAuthenticated }) => {
       console.error('Authorization code not found');
       navigate('/auth'); // Redirect to login if code is missing
     }
-  }, [setIsAuthenticated, navigate]);
+  }, [setIsAuthenticated, navigate, domain]);
 
   // Render a loading state while exchanging tokens
   if (loading) {
