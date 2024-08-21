@@ -1,11 +1,10 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { FaShieldAlt, FaRocket, FaGlobe, FaDollarSign } from 'react-icons/fa';
 import { db } from '../firebaseConfig';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import Modal from './Modal/Modal';
 import './HeroSection.css';
 import debounce from 'lodash.debounce';
-
 import { validateEmail, sanitizeInput } from './utils/utils';
 
 const HeroSection = () => {
@@ -14,14 +13,17 @@ const HeroSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [honeypot, setHoneypot] = useState(''); // Honeypot field
 
-  const debouncedSetEmail = useCallback (
-    debounce((value) => setEmail(value), 300),
-    []
-  );
+  // Debounced email update
+  useEffect(() => {
+    const debouncedSetEmail = debounce((value) => setEmail(value), 300);
+    return () => {
+      debouncedSetEmail.cancel(); // Cleanup function to cancel debounce if the component unmounts
+    };
+  }, []); // Empty dependency array ensures this effect only runs once
 
   const handleChange = (event) => {
     const sanitizedEmail = sanitizeInput(event.target.value);
-    debouncedSetEmail(sanitizedEmail);
+    setEmail(sanitizedEmail); // Directly set the sanitized email
   };
 
   const handleSubmit = async (event) => {

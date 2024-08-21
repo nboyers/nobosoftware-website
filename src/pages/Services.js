@@ -7,6 +7,7 @@ import cloudImage from '../assets/cloud-hosting.png';
 import minecraftImage from '../assets/minecraft-hosting.png'; 
 import brewiesImage from '../assets/brewies.png';
 
+
 const Services = () => {
   return (
     <div className="bgimg">
@@ -17,7 +18,7 @@ const Services = () => {
             <img src={minecraftImage} alt="Minecraft Hosting" />
             <h3>Minecraft Hosting</h3>
             <p>Reliable and scalable Minecraft hosting solutions for gamers.</p>
-            <Link to="/hosting">
+            <Link to="/waitlist">
           <button className="services-button">Join Waitlist</button>
         </Link>
           </div>

@@ -1,0 +1,132 @@
+/* Container for the Terms of Service */
+.tos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  /* Headings Styling */
+  .tos-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .tos-container h2 {
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+  }
+  
+  /* Paragraphs Styling */
+  .tos-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Lists Styling */
+  .tos-container ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tos-container ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Link Styling */
+  .tos-container a {
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px dotted #007bff;
+  }
+  
+  .tos-container a:hover {
+    color: #0056b3;
+    border-bottom: 1px solid #0056b3;
+  }
+  
+  /* Contact Information Styling */
+  .tos-container p strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Media Queries for Mobile View */
+  @media (max-width: 768px) {
+    .tos-container {
+      padding: 20px 15px;
+      box-shadow: none;
+    }
+  
+    .tos-container h1 {
+      font-size: 2rem;
+    }
+  
+    .tos-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .tos-container p {
+      font-size: 0.95rem;
+    }
+  
+    .tos-container ul li {
+      font-size: 0.95rem;
+    }
+  
+    /* Adjust margins for mobile */
+    .tos-container h2 {
+      margin-top: 20px;
+    }
+  
+    .tos-container ul {
+      padding-left: 15px;
+    }
+  }
+  
+  /* Media Queries for Smaller Mobile Devices */
+  @media (max-width: 480px) {
+    .tos-container {
+      padding: 15px 10px;
+    }
+  
+    .tos-container h1 {
+      font-size: 1.75rem;
+    }
+  
+    .tos-container h2 {
+      font-size: 1.25rem;
+    }
+  
+    .tos-container p {
+      font-size: 0.9rem;
+    }
+  
+    .tos-container ul li {
+      font-size: 0.9rem;
+    }
+  
+    /* Adjust margins for very small mobile screens */
+    .tos-container h2 {
+      margin-top: 15px;
+    }
+  
+    .tos-container ul {
+      padding-left: 10px;
+    }
+  }
+  
