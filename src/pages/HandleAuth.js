@@ -37,21 +37,19 @@ const HandleAuth = ({ setIsAuthenticated }) => {
         }
 
         const tokens = await response.json();
-        console.log('Tokens received:', tokens); // Log the tokens for debugging
 
-        // Check if tokens are present and store them
-        if (tokens.access_token) {
-          sessionStorage.setItem('accessToken', tokens.access_token);
-          sessionStorage.setItem('idToken', tokens.id_token);
+        // Store tokens in sessionStorage
+        sessionStorage.setItem('accessToken', tokens.access_token);
+        sessionStorage.setItem('idToken', tokens.id_token);
 
-          // Update the authentication state
-          setIsAuthenticated(true);
+        // Update the authentication state
+        setIsAuthenticated(true);
 
-          // Navigate to the dashboard
-          navigate('/dashboard');
-        } else {
-          throw new Error('Tokens are missing from the response');
-        }
+        // Clean the URL to remove the code parameter
+        window.history.replaceState({}, document.title, '/');
+
+        // Navigate to dashboard after authentication
+        navigate('/dashboard');
       } catch (error) {
         setError('Failed to authenticate. Please try again.');
         console.error('Error exchanging code for tokens:', error);

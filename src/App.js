@@ -8,7 +8,7 @@ import HandleAuth from './pages/HandleAuth';
 import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import Waitlist from './components/HeroSection';
-import Footer from './components/Footer'; // Import the Footer component
+import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy'; 
 import TOS from './pages/TOS';
 import './App.css';
@@ -22,7 +22,7 @@ const App = () => {
     if (accessToken) {
       setIsAuthenticated(true);
     }
-  }, []); // Empty dependency array to run only once on mount
+  }, []);
 
   const handleSignOut = () => {
     // Clear session storage and log the user out
