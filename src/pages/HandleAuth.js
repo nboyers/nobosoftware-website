@@ -9,6 +9,7 @@ const HandleAuth = ({ setIsAuthenticated }) => {
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
+    console.log('Authorization code:', code); // Debugging the authorization code
 
     // Function to exchange the authorization code for tokens
     const exchangeCodeForTokens = async (code) => {
@@ -37,19 +38,25 @@ const HandleAuth = ({ setIsAuthenticated }) => {
         }
 
         const tokens = await response.json();
+        console.log('Tokens received:', tokens); // Log tokens received from Cognito
 
         // Store tokens in sessionStorage
-        sessionStorage.setItem('accessToken', tokens.access_token);
-        sessionStorage.setItem('idToken', tokens.id_token);
+        if (tokens.access_token) {
+          sessionStorage.setItem('accessToken', tokens.access_token);
+          sessionStorage.setItem('idToken', tokens.id_token);
+          console.log('Tokens stored in sessionStorage'); // Confirm token storage
 
-        // Update the authentication state
-        setIsAuthenticated(true);
+          // Update the authentication state
+          setIsAuthenticated(true);
 
-        // Clean the URL to remove the code parameter
-        window.history.replaceState({}, document.title, '/');
+          // Clean the URL to remove the code parameter
+          window.history.replaceState({}, document.title, '/');
 
-        // Navigate to dashboard after authentication
-        navigate('/dashboard');
+          // Navigate to dashboard after authentication
+          navigate('/dashboard');
+        } else {
+          throw new Error('Tokens are missing from the response');
+        }
       } catch (error) {
         setError('Failed to authenticate. Please try again.');
         console.error('Error exchanging code for tokens:', error);

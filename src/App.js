@@ -19,13 +19,16 @@ const App = () => {
   // Check sessionStorage for tokens when the app loads
   useEffect(() => {
     const accessToken = sessionStorage.getItem('accessToken');
+    console.log('Access Token in sessionStorage:', accessToken); // Debugging token in sessionStorage
     if (accessToken) {
       setIsAuthenticated(true);
+      console.log('User is authenticated'); // Confirm user authentication
     }
   }, []);
 
   const handleSignOut = () => {
     // Clear session storage and log the user out
+    console.log('Signing out...');
     sessionStorage.removeItem('accessToken');
     sessionStorage.removeItem('idToken');
     setIsAuthenticated(false);
