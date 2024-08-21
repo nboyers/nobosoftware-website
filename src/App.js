@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -16,15 +16,13 @@ import './App.css';
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  // Check sessionStorage for tokens when the app loads
   useEffect(() => {
     const accessToken = sessionStorage.getItem('accessToken');
-    console.log('Access Token:', accessToken); // Debugging the token
     if (accessToken) {
       setIsAuthenticated(true);
-      console.log('User is authenticated'); // Debugging the auth state
     }
-  }, []);
-  
+  }, []); // Empty dependency array to run only once on mount
 
   const handleSignOut = () => {
     // Clear session storage and log the user out
@@ -53,11 +51,9 @@ const App = () => {
           }
         />
       </Routes>
-      <Footer /> {/* Add the Footer component */}
+      <Footer />
     </div>
   );
 };
 
 export default App;
-
-

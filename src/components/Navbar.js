@@ -17,10 +17,8 @@ const redirectToCognitoHostedUI = () => {
 };
 
 const Navbar = ({ isAuthenticated, onSignOut }) => {
-
-  // Clean-up unnecessary logging for production
+  // Log only in development mode
   useEffect(() => {
-    // Optionally, log authentication state changes for debugging in development mode
     if (process.env.NODE_ENV === 'development') {
       console.log('Navbar re-rendered, isAuthenticated:', isAuthenticated);
     }
