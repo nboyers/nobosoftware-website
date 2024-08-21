@@ -11,8 +11,15 @@ const HandleAuth = ({ setIsAuthenticated }) => {
     const code = urlParams.get('code');
     console.log('Authorization code:', code); // Debugging the authorization code
 
-    // Function to exchange the authorization code for tokens
-    const exchangeCodeForTokens = async (code) => {
+    if (!code) {
+      setError('Authorization code not found. Redirecting...');
+      console.error('Authorization code not found');
+      navigate('/auth'); // Redirect to login if code is missing
+      return;
+    }
+
+    // Define the exchange function within the useEffect to ensure proper scoping
+    const exchangeCodeForTokens = async () => {
       const clientId = process.env.REACT_APP_COGNITO_CLIENT_ID;
       const redirectUri = process.env.REACT_APP_COGNITO_REDIRECT_URI;
       const domain = process.env.REACT_APP_COGNITO_DOMAIN;
@@ -25,8 +32,7 @@ const HandleAuth = ({ setIsAuthenticated }) => {
       };
 
       try {
-        // Log the request data
-        console.log('Request data for token exchange:', data);
+        console.log('Requesting token exchange with data:', data);
 
         const response = await fetch(`${domain}/oauth2/token`, {
           method: 'POST',
@@ -36,7 +42,6 @@ const HandleAuth = ({ setIsAuthenticated }) => {
           body: new URLSearchParams(data).toString(),
         });
 
-        // Log the response status and body
         console.log('Token exchange response status:', response.status);
         const responseBody = await response.json();
         console.log('Token exchange response body:', responseBody);
@@ -45,7 +50,6 @@ const HandleAuth = ({ setIsAuthenticated }) => {
           throw new Error('Token exchange failed');
         }
 
-        // Store tokens in sessionStorage
         const { access_token, id_token } = responseBody;
 
         if (access_token && id_token) {
@@ -72,13 +76,8 @@ const HandleAuth = ({ setIsAuthenticated }) => {
       }
     };
 
-    if (code) {
-      exchangeCodeForTokens(code);
-    } else {
-      setError('Authorization code not found. Redirecting...');
-      console.error('Authorization code not found');
-      navigate('/auth'); // Redirect to login if code is missing
-    }
+    // Call the exchange function
+    exchangeCodeForTokens();
   }, [setIsAuthenticated, navigate]);
 
   // Render a loading state while exchanging tokens
