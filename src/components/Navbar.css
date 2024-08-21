@@ -73,15 +73,13 @@
   box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
 
-/* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center; /* Ensure items are aligned vertically in the center */
-  padding: 15px 20px;
+  justify-content: space-between; /* Keep brand on the left and login on the right */
+  align-items: center;
+  padding: 15px 40px; /* Adjust padding to move content inward */
   background-color: white;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
 }
 
 .navbar-brand {
@@ -89,19 +87,16 @@
   font-weight: bold;
   color: #000;
   text-decoration: none;
-  margin-right: auto; /* Pushes the brand to the left */
-}
-
-.navbar-brand:hover {
-  color: #007bff; /* Change color on hover */
+  margin-right: auto; /* Pushes the navbar-menu to the right */
 }
 
 .navbar-menu {
   display: flex;
+  justify-content: flex-start; /* Keep the menu closer to the left */
+  align-items: center; /* Vertically align the items */
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center; /* Vertically align menu items */
 }
 
 .navbar-menu li {
@@ -120,9 +115,8 @@
   color: #007bff;
 }
 
-/* Ensure the login button aligns with the menu items */
 .navbar-login {
-  margin-left: 20px;
+  margin-left: auto; /* Pushes the login button to the right edge */
 }
 
 .login-link {
@@ -149,20 +143,18 @@
 }
 
 /* Responsive Design */
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    justify-content: center; /* Center the entire navbar content */
-    align-items: left; /* Ensure items are aligned vertically in the center */
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
   }
 
   .navbar-menu {
-    flex-direction: row; /* Keep menu items in a row */
-    justify-content: center; /* Center the menu items */
-    align-items: center; /* Vertically align the items */
-    width: auto; /* Allow the menu to fit its content */
+    flex-grow: 0;
+    justify-content: center;
+    margin: 0;
   }
 
   .navbar-menu li {
