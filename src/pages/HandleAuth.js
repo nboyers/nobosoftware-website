@@ -9,11 +9,12 @@ const HandleAuth = ({ setIsAuthenticated }) => {
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
-    
+    console.log('Authorization code:', code); // Debugging the authorization code
+
     if (!code) {
       setError('Authorization code not found. Redirecting...');
       console.error('Authorization code not found');
-      navigate('/'); // Redirect to login if code is missing
+      navigate('/auth'); // Redirect to login if code is missing
       return;
     }
 
@@ -38,9 +39,8 @@ const HandleAuth = ({ setIsAuthenticated }) => {
           },
           body: new URLSearchParams(data).toString(),
         });
-
         const responseBody = await response.json();
-       
+        
 
         if (!response.ok) {
           throw new Error('Token exchange failed');
@@ -51,7 +51,8 @@ const HandleAuth = ({ setIsAuthenticated }) => {
         if (access_token && id_token) {
           sessionStorage.setItem('accessToken', access_token);
           sessionStorage.setItem('idToken', id_token);
-      
+        
+
           // Update the authentication state
           setIsAuthenticated(true);
 
@@ -60,7 +61,6 @@ const HandleAuth = ({ setIsAuthenticated }) => {
 
           // Navigate to dashboard after authentication
           navigate('/');
-
         } else {
           throw new Error('Tokens are missing from the response');
         }
