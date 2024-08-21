@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const HandleAuth = ({ setIsAuthenticated, domain }) => {
+const HandleAuth = ({ setIsAuthenticated }) => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true); // Track loading state
   const [error, setError] = useState(null); // Track error state
@@ -15,11 +15,7 @@ const HandleAuth = ({ setIsAuthenticated, domain }) => {
     const exchangeCodeForTokens = async (code) => {
       const clientId = process.env.REACT_APP_COGNITO_CLIENT_ID;
       const redirectUri = process.env.REACT_APP_COGNITO_REDIRECT_URI;
-      const domain = domain || process.env.REACT_APP_COGNITO_DOMAIN;
-
-      console.log('Client ID:', clientId);
-      console.log('Redirect URI:', redirectUri);
-      console.log('Domain:', domain);
+      const domain = process.env.REACT_APP_COGNITO_DOMAIN;
 
       const data = {
         grant_type: 'authorization_code',
@@ -29,6 +25,9 @@ const HandleAuth = ({ setIsAuthenticated, domain }) => {
       };
 
       try {
+        // Log the request data
+        console.log('Request data for token exchange:', data);
+
         const response = await fetch(`${domain}/oauth2/token`, {
           method: 'POST',
           headers: {
@@ -37,17 +36,21 @@ const HandleAuth = ({ setIsAuthenticated, domain }) => {
           body: new URLSearchParams(data).toString(),
         });
 
+        // Log the response status and body
+        console.log('Token exchange response status:', response.status);
+        const responseBody = await response.json();
+        console.log('Token exchange response body:', responseBody);
+
         if (!response.ok) {
           throw new Error('Token exchange failed');
         }
 
-        const tokens = await response.json();
-        console.log('Tokens received:', tokens); // Log tokens received from Cognito
-
         // Store tokens in sessionStorage
-        if (tokens.access_token) {
-          sessionStorage.setItem('accessToken', tokens.access_token);
-          sessionStorage.setItem('idToken', tokens.id_token);
+        const { access_token, id_token } = responseBody;
+
+        if (access_token && id_token) {
+          sessionStorage.setItem('accessToken', access_token);
+          sessionStorage.setItem('idToken', id_token);
           console.log('Tokens stored in sessionStorage'); // Confirm token storage
 
           // Update the authentication state
@@ -76,7 +79,7 @@ const HandleAuth = ({ setIsAuthenticated, domain }) => {
       console.error('Authorization code not found');
       navigate('/auth'); // Redirect to login if code is missing
     }
-  }, [setIsAuthenticated, navigate, domain]);
+  }, [setIsAuthenticated, navigate]);
 
   // Render a loading state while exchanging tokens
   if (loading) {
