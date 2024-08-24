@@ -12,7 +12,7 @@ const HandleAuth = ({ setIsAuthenticated }) => {
 
     if (!code) {
       setError('Authorization code not found. Redirecting...');
-      console.error('Authorization code not found');
+      console.error('Authorization code not found', error);
       setLoading(false); // Stop loading, show the error
       navigate('/auth'); // Redirect to login if code is missing
       return;
