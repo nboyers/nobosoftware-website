@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy-container">
       <h1>Privacy Policy</h1>
-      <p>Effective Date: August 21st, 2024</p>
+      <p>Effective Date: August 24st, 2024</p>
 
       <h2>1. Information We Collect</h2>
       <p>
@@ -14,7 +14,8 @@ const PrivacyPolicy = () => {
       <h3>Personal Information</h3>
       <p>
         - <strong>Contact Information:</strong> We may collect personal information such as your name, email address, phone number, and mailing address when you register for an account, subscribe to our newsletter, or otherwise interact with us.<br />
-        - <strong>Payment Information:</strong> If you make a purchase or subscribe to a paid service, we may collect payment information (such as credit card numbers and billing details). Payment information is processed securely by our third-party payment processors.
+        - <strong>Payment Information:</strong> If you make a purchase or subscribe to a paid service, we may collect payment information (such as credit card numbers and billing details). Payment information is processed securely by our third-party payment processors.<br />
+        - <strong>User Identifiers:</strong> We may collect and store unique identifiers such as your Cognito ID, Lemon Squeezy Customer ID, and other identifiers that are linked to your account and subscriptions.
       </p>
       <h3>Automatically Collected Information</h3>
       <p>
@@ -29,7 +30,7 @@ const PrivacyPolicy = () => {
       <ul>
         <li><strong>Provide and Improve the Service:</strong> We use your information to operate, maintain, and improve our Service, to process transactions, and to provide customer support.</li>
         <li><strong>Marketing and Communications:</strong> We may use your email address or other contact information to send you marketing materials, promotions, or newsletters about our products and services. You may opt-out of these communications at any time by following the unsubscribe instructions provided in the email.</li>
-        <li><strong>Analytics and Personalization:</strong> We use data to analyze trends, administer the website, and personalize your experience by tailoring content and offers to your preferences.</li>
+        <li><strong>Analytics and Personalization:</strong> We use data to analyze trends, administer the website, personalize your experience by tailoring content and offers to your preferences, and track user activity for potential upsell opportunities.</li>
         <li><strong>Legal Compliance and Protection:</strong> We may use your information to comply with applicable laws, regulations, and legal processes, and to protect the security and integrity of the Service.</li>
       </ul>
 
@@ -41,6 +42,7 @@ const PrivacyPolicy = () => {
         <li><strong>With Service Providers:</strong> We may share your information with third-party service providers who perform services on our behalf, such as payment processors, hosting services, or marketing agencies.</li>
         <li><strong>For Legal Purposes:</strong> We may disclose your information if required by law, in response to a legal request, or to protect the rights, property, or safety of our company, our users, or others.</li>
         <li><strong>In the Event of a Business Transaction:</strong> If our company is involved in a merger, acquisition, sale of assets, or other business transfer, your information may be transferred as part of that transaction.</li>
+        <li><strong>With Your Consent:</strong> We may share your information with your consent or as directed by you, such as when linking your account to a third-party service or platform.</li>
       </ul>
 
       <h2>4. Your Rights and Choices</h2>
