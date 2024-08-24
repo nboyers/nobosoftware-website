@@ -13,6 +13,7 @@ const HandleAuth = ({ setIsAuthenticated }) => {
     if (!code) {
       setError('Authorization code not found. Redirecting...');
       console.error('Authorization code not found');
+      setLoading(false); // Stop loading, show the error
       navigate('/auth'); // Redirect to login if code is missing
       return;
     }
@@ -31,8 +32,6 @@ const HandleAuth = ({ setIsAuthenticated }) => {
       };
 
       try {
-       
-
         const response = await fetch(`${domain}/oauth2/token`, {
           method: 'POST',
           headers: {
@@ -41,9 +40,7 @@ const HandleAuth = ({ setIsAuthenticated }) => {
           body: new URLSearchParams(data).toString(),
         });
 
-      
         const responseBody = await response.json();
-       
 
         if (!response.ok) {
           throw new Error('Token exchange failed');
@@ -54,7 +51,6 @@ const HandleAuth = ({ setIsAuthenticated }) => {
         if (access_token && id_token) {
           sessionStorage.setItem('accessToken', access_token);
           sessionStorage.setItem('idToken', id_token);
-        
 
           // Update the authentication state
           setIsAuthenticated(true);
