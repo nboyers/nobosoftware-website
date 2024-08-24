@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 const ProtectedRoute = ({ isAuthenticated, children }) => {
   if (!isAuthenticated) {
     // If the user is not authenticated, redirect them to the sign-in page
-    return <Navigate to="/auth" />;
+    return <Navigate to="/services" />;
   }
 
   // If authenticated, render the protected content
