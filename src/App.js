@@ -10,7 +10,10 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Waitlist from './components/HeroSection';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Billing from './pages/Store/BillingPage';
+import Storefront from './pages/Store/Storefront';
 import TOS from './pages/TOS';
+
 import './App.css';
 
 const App = () => {
@@ -41,13 +44,32 @@ const App = () => {
     <div className="App">
       <Navbar isAuthenticated={isAuthenticated} onSignOut={handleSignOut} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+      {/* //TODO: Change this to <Home /> when ready */}
+        <Route path="/" element={<Waitlist />} /> 
+        <Route path="/services" element={<Waitlist />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<HandleAuth setIsAuthenticated={setIsAuthenticated} />} />
         <Route path="/waitlist" element={<Waitlist />} />
         <Route path="/tos" element={<TOS />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+        {/* Protected Routes */}
+        <Route
+          path="/billing"
+          element={
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
+              <Billing />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/store"
+          element={
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
+              <Storefront />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/dashboard"
           element={

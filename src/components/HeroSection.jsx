@@ -63,7 +63,7 @@ const HeroSection = () => {
         <div className="text-container">
           <h1 className="header">Unleash Your Minecraft Experience</h1>
           <h2 className="subheader">Join the waitlist and be the first to host your own Minecraft server.</h2>
-          <p className="tagline">Affordable, scalable, and low-latency Minecraft hosting.</p>
+          <p className="tagline">Join the waitlist and gain access to a discount code on launch</p>
           <form className="form" onSubmit={handleSubmit}>
             <div className="input-container">
               <input

@@ -6,12 +6,12 @@ const HomeSection = () => {
     <section className="home-section">
       <div className="home-overlay">
         <div className="home-content">
-          <h1 className="home-title">Welcome to Nobos Software</h1>
-          <p className="home-subtitle">Innovative solutions for mobile and cloud development.</p>
+          <h1 className="home-title">Welcome to Nobos Minecraft Hosting</h1>
+          <p className="home-subtitle">Reliable and scalable Minecraft server solutions.</p>
           <p className="home-description">
-            Delivering high-quality iOS, Android applications, and scalable cloud hosting services.
+            Host your Minecraft server with us and enjoy seamless gameplay with zero downtime. Customizable plans to fit every need and budget.
           </p>
-          <a href="/services" className="home-button">Explore Our Services</a>
+          <a href="/waitlist" className="home-button">View Our Plans</a>
         </div>
       </div>
     </section>

@@ -1,7 +1,3 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-  height: 100%;
-}
 
 .bgimg {
   /* Background image */
@@ -24,11 +20,15 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  min-height: 100vh;  /* Ensures at least full viewport height */
+  height: auto;    /* Allows container to grow with more content */
 }
 
 .services-content {
+
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 2em;
+   padding: 1em;
   border-radius: 8px;
   text-align: center;
   color: white;
