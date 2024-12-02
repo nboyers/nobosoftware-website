@@ -7,7 +7,6 @@ import Contact from './pages/Contact';
 import HandleAuth from './pages/HandleAuth';
 import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
-import Waitlist from './components/HeroSection';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Billing from './pages/Store/BillingPage';
@@ -44,12 +43,10 @@ const App = () => {
     <div className="App">
       <Navbar isAuthenticated={isAuthenticated} onSignOut={handleSignOut} />
       <Routes>
-      {/* //TODO: Change this to <Home /> when ready */}
-        <Route path="/" element={<Waitlist />} /> 
-        <Route path="/services" element={<Waitlist />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<HandleAuth setIsAuthenticated={setIsAuthenticated} />} />
-        <Route path="/waitlist" element={<Waitlist />} />
         <Route path="/tos" element={<TOS />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
