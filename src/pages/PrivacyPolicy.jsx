@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy-container">
       <h1>Privacy Policy</h1>
-      <p><strong>Last Updated:</strong> (Effective Date)</p>
+      <p><strong>Last Updated:</strong> March 23rd, 2025</p>
 
       <p>Your privacy is important to us. This Privacy Policy explains what information our Company ("we" or "us") collects when you use our Service, how we use and share that information, and the choices you have regarding your data. This Policy applies to all users of the Service and any associated websites or mobile applications. By using the Service, you consent to the data practices described in this Privacy Policy. If you do not agree with this Policy, please do not use the Service.</p>
 

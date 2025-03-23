@@ -5,7 +5,7 @@ const TOS = () => {
   return (
     <div className="tos-container">
       <h1>Terms of Service</h1>
-      <p><strong>Last Updated:</strong> March 23rdm</p>
+      <p><strong>Last Updated:</strong> March 23rd, 2025</p>
 
       <h2>Acceptance of Terms</h2>
       <p>You must be at least 18 years old (or the age of legal majority in your jurisdiction) to create an account and use the Service. By using the Service, you represent and warrant that you meet this age requirement and have the legal capacity to enter into this agreement. The Service is intended for users in the United States. If you access the Service from outside the U.S., you do so on your own initiative and are responsible for compliance with any local laws, if applicable. We do not knowingly collect information from anyone under 13 years of age, and if you are under 13 you are not permitted to use or submit information to the Service.</p>
