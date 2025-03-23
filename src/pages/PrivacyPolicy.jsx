@@ -1,94 +1,99 @@
 import React from 'react';
-import './PrivacyPolicy.css'; // Optional: Create a CSS file for styling
+import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="privacy-policy-container">
+    <div className="PrivacyPolicy">
       <h1>Privacy Policy</h1>
-      <p>Effective Date: August 24st, 2024</p>
+      <p><strong>Last Updated:</strong> (Effective Date)</p>
 
-      <h2>1. Information We Collect</h2>
-      <p>
-        We may collect various types of information from or about you depending on how you use our Service:
-      </p>
-      <h3>Personal Information</h3>
-      <p>
-        - <strong>Contact Information:</strong> We may collect personal information such as your name, email address, phone number, and mailing address when you register for an account, subscribe to our newsletter, or otherwise interact with us.<br />
-        - <strong>Payment Information:</strong> If you make a purchase or subscribe to a paid service, we may collect payment information (such as credit card numbers and billing details). Payment information is processed securely by our third-party payment processors.<br />
-        - <strong>User Identifiers:</strong> We may collect and store unique identifiers such as your Cognito ID, Lemon Squeezy Customer ID, and other identifiers that are linked to your account and subscriptions.
-      </p>
-      <h3>Automatically Collected Information</h3>
-      <p>
-        - <strong>Usage Information:</strong> We automatically collect information about your interactions with the Service, including IP addresses, browser type, access times, pages viewed, and referring website addresses.<br />
-        - <strong>Cookies:</strong> We use cookies and similar technologies to enhance your experience, personalize content, and analyze traffic on our site.
-      </p>
+      <p>Your privacy is important to us. This Privacy Policy explains what information our Company ("we" or "us") collects when you use our Service, how we use and share that information, and the choices you have regarding your data. This Policy applies to all users of the Service and any associated websites or mobile applications. By using the Service, you consent to the data practices described in this Privacy Policy. If you do not agree with this Policy, please do not use the Service.</p>
 
-      <h2>2. How We Use Your Information</h2>
-      <p>
-        We may use the information we collect in the following ways:
-      </p>
+      <h2>Information We Collect</h2>
       <ul>
-        <li><strong>Provide and Improve the Service:</strong> We use your information to operate, maintain, and improve our Service, to process transactions, and to provide customer support.</li>
-        <li><strong>Marketing and Communications:</strong> We may use your email address or other contact information to send you marketing materials, promotions, or newsletters about our products and services. You may opt-out of these communications at any time by following the unsubscribe instructions provided in the email.</li>
-        <li><strong>Analytics and Personalization:</strong> We use data to analyze trends, administer the website, personalize your experience by tailoring content and offers to your preferences, and track user activity for potential upsell opportunities.</li>
-        <li><strong>Legal Compliance and Protection:</strong> We may use your information to comply with applicable laws, regulations, and legal processes, and to protect the security and integrity of the Service.</li>
+        <li><strong>Personal Identifiable Information:</strong> Name and email for account management, authentication, and communication.</li>
+        <li><strong>Photos and Uploaded Content:</strong> Images of personal assets and related metadata such as descriptions, purchase details, or locations.</li>
+        <li><strong>Usage Data:</strong> IP address, browser type, device, pages visited, features used, and timestamps.</li>
+        <li><strong>Communication Data:</strong> Any information you submit via support or feedback channels.</li>
       </ul>
 
-      <h2>3. How We Share Your Information</h2>
-      <p>
-        We may share your information in the following situations:
-      </p>
+      <p>We do not intentionally collect sensitive personal information and ask that you avoid uploading such content.</p>
+
+      <h2>How We Use Your Information</h2>
       <ul>
-        <li><strong>With Service Providers:</strong> We may share your information with third-party service providers who perform services on our behalf, such as payment processors, hosting services, or marketing agencies.</li>
-        <li><strong>For Legal Purposes:</strong> We may disclose your information if required by law, in response to a legal request, or to protect the rights, property, or safety of our company, our users, or others.</li>
-        <li><strong>In the Event of a Business Transaction:</strong> If our company is involved in a merger, acquisition, sale of assets, or other business transfer, your information may be transferred as part of that transaction.</li>
-        <li><strong>With Your Consent:</strong> We may share your information with your consent or as directed by you, such as when linking your account to a third-party service or platform.</li>
+        <li><strong>Service Functionality:</strong> Creating and managing your asset inventory, displaying uploads and metadata.</li>
+        <li><strong>Improvement and Analytics:</strong> Usage feedback for improving feature performance.</li>
+        <li><strong>Insurance Support:</strong> Providing reports of your asset inventory for claims (upon request).</li>
+        <li><strong>Affiliate Recommendations:</strong> Non-personal metadata used to suggest replacement items with affiliate links.</li>
+        <li><strong>Communications:</strong> Verification, password resets, product updates, tips, and service announcements.</li>
+        <li><strong>Security and Fraud Detection:</strong> Monitoring for abusive activity and enforcing Terms of Service.</li>
       </ul>
 
-      <h2>4. Your Rights and Choices</h2>
-      <h3>Opt-Out of Marketing Communications</h3>
+      <h2>Cookies & Tracking Technologies</h2>
+      <ul>
+        <li><strong>Cookies:</strong> Session management and user navigation support.</li>
+        <li><strong>Analytics:</strong> Aggregated insights via services like Google Analytics.</li>
+        <li><strong>Affiliate Tracking:</strong> Third-party cookies for referral tracking.</li>
+      </ul>
+      <p>Most browsers allow cookie management through their settings.</p>
+
+      <h2>How We Share or Disclose Information</h2>
+      <ul>
+        <li><strong>With Service Providers:</strong> Limited access to trusted vendors.</li>
+        <li><strong>Affiliate Partners:</strong> Minimal data shared when clicking purchase links.</li>
+        <li><strong>Legal Compliance:</strong> Disclosures to comply with laws or prevent misuse.</li>
+        <li><strong>Business Transfers:</strong> Information may transfer during acquisitions or reorganizations.</li>
+        <li><strong>With Consent:</strong> Only share with third parties with your approval.</li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      <ul>
+        <li><strong>Account Data:</strong> Retained until you delete your account.</li>
+        <li><strong>Deleted Data:</strong> Removed from main systems and backups within 30-60 days.</li>
+        <li><strong>Inactive Accounts:</strong> May be deleted after extended inactivity.</li>
+      </ul>
+
+      <h2>Your Rights and Choices</h2>
+      <ul>
+        <li><strong>Access and Portability:</strong> Request export of your data.</li>
+        <li><strong>Correction:</strong> Update or fix incorrect data.</li>
+        <li><strong>Deletion:</strong> Delete individual photos or your entire account.</li>
+        <li><strong>Withdraw Consent:</strong> Opt-out of features that rely on consent.</li>
+        <li><strong>Communication Preferences:</strong> Unsubscribe from marketing emails.</li>
+        <li><strong>Do Not Track:</strong> We do not respond to browser DNT signals.</li>
+        <li><strong>California & EU Rights:</strong> We comply with applicable privacy regulations and provide data access/deletion rights.</li>
+      </ul>
+
+      <h2>Data Security</h2>
+      <ul>
+        <li><strong>Encryption:</strong> HTTPS/TLS for data in transit, and encryption at rest.</li>
+        <li><strong>Access Controls:</strong> Strict permission-based internal access.</li>
+        <li><strong>Monitoring:</strong> Firewall, intrusion detection, and security audits.</li>
+        <li><strong>Backups:</strong> Encrypted and regularly maintained.</li>
+        <li><strong>Employee Training:</strong> Required privacy and security training.</li>
+      </ul>
+
+      <h2>Children's Privacy</h2>
       <p>
-        You may opt out of receiving marketing communications from us by following the instructions provided in those communications or by contacting us directly at [Your Contact Email].
-      </p>
-      <h3>Access and Update Information</h3>
-      <p>
-        You may access, update, or delete the personal information you have provided to us by logging into your account or by contacting us directly at [Your Contact Email].
-      </p>
-      <h3>Cookies and Tracking Technologies</h3>
-      <p>
-        Most web browsers are set to accept cookies by default. If you prefer, you can set your browser to remove or reject cookies. Please note that disabling cookies may affect the availability and functionality of the Service.
+        The Service is not for users under age 13. If discovered, data submitted by minors will be deleted. Use by minors over 13 should be supervised by a parent or guardian.
       </p>
 
-      <h2>5. Data Security</h2>
+      <h2>International Users</h2>
       <p>
-        We take reasonable measures to protect the information we collect from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction. However, please be aware that no method of transmitting information over the Internet or storing information is completely secure.
+        By using the Service, you consent to the data practices described in this Privacy Policy.
+        If you do not agree with this Policy, please do not use the Service.
       </p>
-
-      <h2>6. Data Retention</h2>
+      <h2>Changes to this Privacy Policy</h2>
+      <p>We may update this policy occasionally. Significant updates will be announced via the website, email, or user dashboard. Continued use indicates acceptance of changes.</p>
+      <h2>Contact Us</h2>
       <p>
-        We will retain your personal information for as long as your account is active, as needed to provide you with the Service, or as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.
-      </p>
-
-      <h2>7. Children's Privacy</h2>
-      <p>
-        Our Service is not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately, and we will take steps to delete such information.
-      </p>
-
-      <h2>8. Changes to This Privacy Policy</h2>
-      <p>
-        We reserve the right to update or modify this Privacy Policy at any time. If we make material changes, we will notify you by posting the updated policy on our website or through other communication channels. Your continued use of the Service after any such changes constitutes your acceptance of the revised Privacy Policy.
-      </p>
-
-      <h2>9. Contact Us</h2>
-      <p>
-        If you have any questions or concerns about this Privacy Policy, please contact us at:
-      </p>
-      <p>
-        Nobos Software LLC <br />
-        Email: support@nobosoftware.com <br />
+        If you have questions or concerns, please contact us:
+        <br />Email: support@nobosoftware.com
       </p>
     </div>
   );
 };
 
 export default PrivacyPolicy;
+
+
