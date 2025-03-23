@@ -3,7 +3,7 @@ import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="PrivacyPolicy">
+    <div className="privacy-of-service-container">
       <h1>Privacy Policy</h1>
       <p><strong>Last Updated:</strong> (Effective Date)</p>
 
@@ -73,7 +73,7 @@ const PrivacyPolicy = () => {
         <li><strong>Employee Training:</strong> Required privacy and security training.</li>
       </ul>
 
-      <h2>Children's Privacy</h2>
+      <h2>Children&apos;s Privacy</h2>
       <p>
         The Service is not for users under age 13. If discovered, data submitted by minors will be deleted. Use by minors over 13 should be supervised by a parent or guardian.
       </p>
@@ -83,17 +83,20 @@ const PrivacyPolicy = () => {
         By using the Service, you consent to the data practices described in this Privacy Policy.
         If you do not agree with this Policy, please do not use the Service.
       </p>
+
       <h2>Changes to this Privacy Policy</h2>
-      <p>We may update this policy occasionally. Significant updates will be announced via the website, email, or user dashboard. Continued use indicates acceptance of changes.</p>
+      <p>
+        We may update this policy occasionally. Significant updates will be announced via the website, email, or user dashboard. Continued use indicates acceptance of changes.
+      </p>
+
       <h2>Contact Us</h2>
       <p>
         If you have questions or concerns, please contact us:
-        <br />Email: support@nobosoftware.com
+        <br />
+        Email: <a href="mailto:support@nobosoftware.com">support@nobosoftware.com</a>
       </p>
     </div>
   );
 };
 
 export default PrivacyPolicy;
-
-

@@ -1,73 +1,90 @@
 import React from 'react';
-import './TOS.css'; // Optional: You can style the TOS page using this CSS file
+import './TermsOfService.css'; // Optional: style as needed
 
-const TOS = () => {
+const TermsOfService = () => {
   return (
-    <div className="tos-container">
+    <div className="terms-of-service-container">
       <h1>Terms of Service</h1>
-      <p>Effective Date: August 21st, 2024</p>
+      <p><strong>Last Updated:</strong> [Insert Date]</p>
 
-      <h2>1. Acceptance of Terms</h2>
-      <p>
-        By accessing or using our Service, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you are using the Service on behalf of an organization, you represent and warrant that you have the authority to bind the organization to these Terms.
-      </p>
+      <h2>Acceptance of Terms</h2>
+      <p>You must be at least 18 years old (or the age of legal majority in your jurisdiction) to create an account and use the Service. By using the Service, you represent and warrant that you meet this age requirement and have the legal capacity to enter into this agreement. The Service is intended for users in the United States. If you access the Service from outside the U.S., you do so on your own initiative and are responsible for compliance with any local laws, if applicable. We do not knowingly collect information from anyone under 13 years of age, and if you are under 13 you are not permitted to use or submit information to the Service.</p>
 
-      <h2>2. Changes to the Terms</h2>
-      <p>
-        We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will notify you of any changes by posting the updated Terms on our website or within the Service. Your continued use of the Service after any such modifications constitutes your acceptance of the new Terms.
-      </p>
+      <h2>User Eligibility</h2>
+      <p>You must be at least 18 years old (or the age of legal majority in your jurisdiction) to create an account and use the Service. By using the Service, you represent and warrant that you meet this age requirement and have the legal capacity to enter into this agreement. The Service is intended for users in the United States. If you access the Service from outside the U.S., you do so on your own initiative and are responsible for compliance with any local laws, if applicable.</p>
 
-      <h2>3. Use of Service</h2>
-      <p>
-        You agree to use the Service in compliance with all applicable laws and regulations. You must not use the Service in any way that violates any law or infringes upon any third-party rights.
-      </p>
+      <h2>Service Purpose and Functionality</h2>
+      <p>The Service is designed to help you create a secure digital inventory of your personal belongings by allowing you to upload photographs of items and add relevant metadata (such as descriptions, values, purchase dates, and other details). The purpose of the Service is to assist you in documenting your assets, which may be useful for recovery or verification during an insurance claim. You can voluntarily upload photos and information about your belongings, organize them within the app, and retrieve this data if needed to prove ownership or value to insurance providers. We may also provide features such as search and tagging to help you manage your asset records, and offer suggestions for replacement products if an item is lost or damaged. Important: While we strive to help you in the insurance claim process, we are not an insurance company and do not guarantee that using the Service will result in successful insurance claims or specific outcomes. You are responsible for maintaining any official documentation required by your insurer, and the Service should be used as a supplementary tool. We do not provide professional insurance, financial, or legal advice.</p>
 
-      <h2>4. Data Collection and Usage</h2>
-      <p>
-        By using our Service, you agree to allow us to collect, process, and use data as described in our Privacy Policy. This includes personal data such as your name, email, Cognito ID, Lemon Squeezy Customer ID, and other related information. We collect this data to improve your experience, provide personalized services, facilitate transactions, and communicate with you about updates and promotions.
-      </p>
-      <p>
-        While we take steps to protect your data, you understand that no method of transmission over the Internet is completely secure. You acknowledge that you use the Service at your own risk and agree that we are not liable for any unauthorized access to your information.
-      </p>
+      <h2>User-Generated Content and Ownership</h2>
+      <p>When you use our Service, you may upload content, including but not limited to photographs of your assets and textual information or descriptions about those assets (collectively, “User Content”). You retain all rights and ownership of your User Content. We do not claim ownership over the items, photographs, or descriptions you provide. These Terms do not grant us any ownership of your content - what's yours stays yours.</p>
+      <p>By uploading content, you represent and warrant that:</p>
+      <ul>
+        <li>The content is your own or you have all necessary rights and permissions to upload it and to grant the license described below.</li>
+        <li>The content does not infringe or violate the intellectual property, privacy, publicity, or other legal rights of any third party.</li>
+        <li>The content is lawful and does not violate any applicable laws or regulations (for example, you will not upload illegal, defamatory, or obscene material, or any photos containing personal data of others without consent).</li>
+        <li>The content is relevant to the purpose of the Service (i.e. related to documenting personal assets) and is not unrelated spam or malicious software.</li>
+      </ul>
+      <p>You are solely responsible for the User Content you upload. We are not responsible for the accuracy, completeness, or legality of your User Content. While we do not routinely monitor content, we reserve the right to remove or disable access to any User Content that we, in our sole discretion, deem to be in violation of these Terms or otherwise harmful, without prior notice.</p>
 
-      <h2>5. Future Use of Data</h2>
-      <p>
-        You grant us the right to use the data we collect in ways that are consistent with our current Privacy Policy, as well as potential future uses that align with the spirit of improving our Service, developing new features, or offering additional products and services. This includes, but is not limited to, sharing anonymized data with third parties, conducting analytics, and using data to enhance marketing efforts.
-      </p>
-      <p>
-        We may also introduce new ways to utilize your data that aren't explicitly outlined in the current Terms of Service. If we decide to make significant changes in the way we use your data, we will notify you by updating our Privacy Policy or through other communication channels.
-      </p>
+      <h2>License Grant to Company</h2>
+      <p>In order to operate and provide the Service, we need certain rights to the User Content you submit. By uploading or submitting User Content, you grant the Company a worldwide, non-exclusive, royalty-free, sublicensable license to use, host, store, reproduce, modify, adapt, display, publish, and distribute your User Content for the purpose of operating, maintaining, and improving the Service. This means, for example, we have your permission to save your photos on our servers, back them up, display them to you when you log in, and (if you request) display them to those you choose to share with (for instance, if the Service allows you to share an inventory report with an insurance adjuster or family member). We will not sell your User Content or use it for marketing outside of providing you the Service without your explicit permission. This license is solely to allow us to operate and provide the Service features to you (and other users you authorize) - such as generating an organized list of your items, creating any necessary thumbnails or backups of your photos, or integrating with third-party services at your request (for example, to facilitate an insurance claim or to show you product replacement suggestions). The license also allows us to use your content to improve our algorithms and services (for instance, using data in aggregate to develop new features or improve identification of items), but in those cases your data will be de-identified and not personally associated with you. The license you grant us is revocable to the extent that if you delete specific User Content from the Service, or terminate your account, we will stop displaying that content to you and others (subject to our Data Retention policy in the Privacy Policy). However, you agree that we may retain backup copies of deleted content for a limited time in our archives, and may retain certain information if required by law or for legitimate business purposes (such as legal compliance or resolving disputes). Once you remove content or delete your account, our license to use that content for providing the Service will generally end after a reasonable period needed to process deletion, except to the extent we are required to retain copies by law or for legal reasons.</p>
 
-      <h2>6. Limitation of Liability</h2>
-      <p>
-        To the fullest extent permitted by law, we are not responsible for any damages resulting from your use of the Service, including but not limited to loss of data, interruption of service, or failure to receive communications.
-      </p>
+      <h2>User Conduct and Acceptable Use</h2>
+      <p>We strive to maintain a respectful and lawful community. By using the Service, you agree to use it only for its intended purpose and in line with these Terms. You must not:</p>
+      <ul>
+        <li>Use the Service in a way that violates any applicable law or regulation.</li>
+        <li>Upload any content that is illegal, harmful, fraudulent, defamatory, pornographic, hateful, or otherwise objectionable or that violates any person’s rights (including intellectual property rights and privacy rights).</li>
+        <li>Attempt to hack, destabilize, or interfere with the Service, its servers, or other users’ data. This includes not uploading any viruses, malware, or harmful code.</li>
+        <li>Misrepresent your identity or affiliation with any person or entity, or impersonate others on the Service.</li>
+        <li>Engage in any activity that could disable, overburden, or impair the functioning or security of the Service (such as a denial-of-service attack or spamming).</li>
+        <li>Use any automated means (e.g., bots, scraping) to access or collect data from the Service without our permission.</li>
+        <li>Attempt to circumvent any content-filtering techniques we may employ or attempt to access areas of the Service that you are not authorized to access.</li>
+        <li>Encourage or assist any violations of these Terms by others.</li>
+      </ul>
+      <p>Violation of any of the above rules may result in immediate termination of your account (as detailed below) and may subject you to legal consequences. We reserve the right (but have no obligation) to investigate and take appropriate action, including removing content, suspending or terminating accounts, and/or reporting you to law enforcement, if you engage in any prohibited conduct.</p>
 
-      <h2>7. Termination</h2>
-      <p>
-        We reserve the right to terminate or suspend your access to the Service at any time, without notice, for any reason, including but not limited to your breach of these Terms.
-      </p>
+      <h2>Account Termination</h2>
+      <p>By You: You may stop using the Service and/or terminate your account at any time. You can do this by following the account deletion procedure within the app (if available) or by contacting us at the support email provided. Once your account is terminated, you will lose access to the Service and the data associated with your account. We recommend that you export or save any important information (such as your inventory data) before terminating your account.</p>
+      <p>By Company: We reserve the right to suspend or terminate your account or access to the Service at our sole discretion, with or without notice, if we believe that you have violated these Terms, posed a security or legal risk to the Company or our users, or engaged in conduct that is otherwise harmful or objectionable. In most cases of minor violations, we will attempt to provide you with a warning and an opportunity to correct the issue, but we are not obligated to do so. Upon termination (by you or by us), your right to use the Service will immediately cease. We will deactivate or delete your account and all associated content, except that we may retain certain data as required to comply with legal obligations, resolve disputes, or enforce our agreements. The provisions in these Terms that by their nature should survive termination (such as ownership of content, disclaimers, limitation of liability, dispute resolution, etc.) will remain in effect even after your account is closed.</p>
 
-      <h2>8. Governing Law</h2>
-      <p>
-        These Terms shall be governed and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions.
-      </p>
+      <h2>Affiliate Link Disclosure</h2>
+      <p>Our Service may, as part of its functionality, suggest or recommend replacement products for items that you have stored in the app (for example, if an item is lost, we might recommend a similar product available for purchase). Some of these product recommendations may include affiliate links to third-party retailers or e-commerce platforms. This means that if you click on such a link and subsequently make a purchase, the Company may earn a small commission or referral fee at no additional cost to you. We provide these affiliate links to help you conveniently find replacement items and to support our Service (affiliate commissions help fund our operations). We are committed to transparency: the presence of an affiliate link does not influence our recommendations beyond the business arrangement – we aim to suggest relevant and high-quality replacement options for your convenience. Whether or not a link is an affiliate link, we encourage you to make purchasing decisions that are right for you. Please note that when you click an affiliate link, you will be redirected to an external third-party website not controlled by us. Any purchase you make is solely between you and that third-party seller. We do not guarantee and are not responsible for the quality, safety, legality, or fitness of the products purchased through affiliate links, nor for any transactions you conduct on third-party sites. Those sites will have their own terms of service and privacy policies, which we encourage you to review. By using the Service and clicking on affiliate links, you acknowledge and agree to this affiliate relationship and understand that the Company may earn compensation from your purchases via those links. This disclosure is made pursuant to the U.S. Federal Trade Commission’s guidelines on endorsements and affiliate marketing.</p>
 
-      <h2>9. Severability</h2>
-      <p>
-        If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall continue to be valid and enforceable.
-      </p>
+      <h2>Intellectual Property of the Company</h2>
+      <p>All rights, title, and interest in and to the Service (excluding your User Content) are and will remain the exclusive property of the Company and/or its licensors. This includes all software, code, designs, logos, trademarks, service marks, content created or provided by us, and any other materials or intellectual property on the Service (“Company Content”). The Company grants you a limited, non-exclusive, non-transferable, revocable license to access and use the Service and Company Content for your personal, non-commercial use only in accordance with these Terms. You may not copy, modify, distribute, sell, or lease any part of our Service or Company Content, nor may you reverse engineer or attempt to extract the source code of any software, unless laws prohibit those restrictions or you have our written permission. The Company reserves all rights not expressly granted to you in these Terms. Any feedback, suggestions, or ideas you provide to us regarding the Service (“Feedback”) is completely voluntary, and we are free to use such Feedback as we see fit and without any obligation to you. Providing Feedback does not grant you any intellectual property or other right in the Service, and you agree that any improvements or modifications based on your Feedback are owned by the Company.</p>
 
-      <h2>Contact Information</h2>
+      <h2>Disclaimer of Warranties</h2>
+      <p>The Service is provided on an “AS IS” and “AS AVAILABLE” basis. To the fullest extent permitted by law, the Company disclaims all warranties of any kind, whether express, implied, or statutory, regarding the Service. This includes any implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, and any warranties arising out of course of dealing or usage of trade. We do not warrant that:</p>
+      <ul>
+        <li>The Service will meet your requirements or expectations.</li>
+        <li>The Service will be uninterrupted, timely, secure, or error-free.</li>
+        <li>The results that may be obtained from the use of the Service will be accurate or reliable.</li>
+        <li>The quality of any products, services, information, or other material purchased or obtained by you through the Service will meet your expectations.</li>
+        <li>Any errors or defects in the Service will be corrected.</li>
+      </ul>
+      <p>You understand that using the Service to store information about your assets is done at your own discretion and risk. We make no guarantees that the data you store (including photos and metadata) will always be available to you, or that it will be accepted as proof by any insurance company or third party. We strongly encourage you to keep backup copies of your important information. No advice or information, whether oral or written, obtained from the Company or through the Service, shall create any warranty not expressly stated in these Terms.</p>
+
+      <h2>Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable law, in no event shall the Company or its officers, directors, employees, agents, or affiliates be liable to you for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, loss of data, loss of use, cost of procurement of substitute goods or services, or similar damages, whether incurred directly or indirectly, under any theory of liability (contract, tort, negligence, strict liability, or otherwise) arising out of or in connection with your access to or use of (or inability to use) the Service or any content provided through the Service, even if we have been advised of the possibility of such damages. In no case shall the aggregate liability of the Company for all claims arising out of or related to the Service exceed the amount (if any) that you paid us to use the Service in the 12 months prior to the event giving rise to liability or $100 USD, whichever is greater. (If applicable law does not allow the limitation of liability as set forth above, this limitation may not apply to you, and you may have rights in addition to those contained herein.) The limitations above are fundamental elements of the basis of the bargain between you and us. The Service would not be provided to you without such limitations. Your sole and exclusive remedy for dissatisfaction with the Service is to stop using the Service and, if applicable, delete your account.</p>
+
+      <h2>Dispute Resolution and Governing Law</h2>
+      <p>Governing Law: These Terms and any dispute or claim arising out of or related to these Terms or the Service will be governed by and construed in accordance with the laws of the United States and the laws of the State in which the Company is headquartered, without giving effect to any conflict of law principles that would result in the application of the laws of another jurisdiction. If you reside outside of the United States, you agree that U.S. laws will apply to your use of the Service. Notwithstanding the foregoing, you may have certain consumer rights under your local laws in addition to those provided under U.S. law, and these Terms are not intended to limit such statutory consumer rights.</p>
+      <p>Dispute Resolution: We sincerely hope to resolve any dispute with you amicably. If you have any concerns or disputes with the Company or the Service, you agree to first try to resolve it informally by contacting us (see the “Contact Us” section below) and providing a brief, written description of the dispute and your contact information. We will attempt to resolve the dispute informally by contacting you through email or other means. In the unlikely event that we cannot resolve a dispute informally, any legal action or proceeding arising under or relating to these Terms shall be brought exclusively in the federal or state courts located in the jurisdiction of the Company’s headquarters. You and the Company both consent to the personal jurisdiction of such courts and waive any objections to venue in those courts, including any claim that the legal proceedings have been brought in an improper forum.</p>
+      <p>No Class Actions: To the extent permitted by law, you and the Company agree that each may bring claims against the other only in an individual capacity and not as a plaintiff or class member in any purported class or representative action.</p>
+      <p>Injunctive Relief: Notwithstanding the above, you acknowledge that unauthorized use of our intellectual property or a breach of the User Content license or confidentiality obligations may cause irreparable harm to the Company for which monetary damages would not be an adequate remedy. In such cases, we may seek injunctive or equitable relief in any court of competent jurisdiction to stop or prevent such breaches, in addition to our other rights and remedies.</p>
+
+      <h2>Changes to the Service and Terms</h2>
+      <p>The Company reserves the right to modify, suspend, or discontinue any aspect of the Service at any time, including adding or removing features, data storage limits, or availability of the Service, with or without notice to you. Any new feature that augments or enhances the current Service shall be subject to these Terms (unless specified otherwise). Likewise, we may update or revise these Terms from time to time. If we make material changes, we will provide notice to you by posting the updated Terms on our site or through the app and updating the “Last Updated” date at the top of the Terms. In some cases, we might also notify you via email or within the Service. By continuing to use the Service after any
+      changes become effective, you agree to be bound by the revised Terms. If you do not agree to the new Terms, you should stop using the Service and, if applicable, delete your account.</p>
+
+      <h2>Contact Us</h2>
       <p>
-        If you have any questions about these Terms, please contact us at:
-      </p>
-      <p>
-        Nobos Software LLC <br />
-        Email: support@nobosoftware.com <br />
+        If you have any questions about these Terms, or need to contact us for any reason, please reach out to us at <strong>support@nobosoftware.com</strong> or via the contact form on our website. For official notices or legal correspondence, you may contact us in writing at the mailing address provided on our website’s “Contact” or “About” page. (If you are the Company drafting these Terms, be sure to include your up-to-date contact information here for users to reach you.)
       </p>
     </div>
   );
 };
 
-export default TOS;
+export default TermsOfService;
+
