@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Billing from './pages/Store/BillingPage';
 import Storefront from './pages/Store/Storefront';
-import TOS from './pages/TOS';
+import TOS from './pages/TermsOfService';
 
 import './App.css';
 
