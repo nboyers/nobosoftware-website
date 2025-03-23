@@ -8,10 +8,11 @@ import HandleAuth from './pages/HandleAuth';
 import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import Footer from './components/Footer';
-import PrivacyPolicy from './pages/PrivacyPolicy';
 import Billing from './pages/Store/BillingPage';
 import Storefront from './pages/Store/Storefront';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import TOS from './pages/TermsOfService';
+
 
 import './App.css';
 
