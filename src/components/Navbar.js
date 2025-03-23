@@ -2,19 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-// Function to securely redirect the user to Cognito's Hosted UI
-const redirectToCognitoHostedUI = () => {
-  const clientId = process.env.REACT_APP_COGNITO_CLIENT_ID;
-  const redirectUri = encodeURIComponent(process.env.REACT_APP_COGNITO_REDIRECT_URI);
-  const cognitoDomain = process.env.REACT_APP_COGNITO_DOMAIN;
-
-  if (!clientId || !redirectUri || !cognitoDomain) {
-    console.error('Missing environment variables for Cognito Hosted UI redirect.');
-    return;
-  }
-
-  window.location.href = `${cognitoDomain}/login?client_id=${clientId}&response_type=code&scope=openid&redirect_uri=${redirectUri}`;
-};
 
 const Navbar = ({ isAuthenticated, onSignOut }) => {
   return (
@@ -35,14 +22,12 @@ const Navbar = ({ isAuthenticated, onSignOut }) => {
               <button onClick={onSignOut} className="login-link">Sign Out</button>
             </li>
           </>
-        ) : (
-          <li className="navbar-login">
-            <button onClick={redirectToCognitoHostedUI} className="login-link">Login</button>
-          </li>
-        )}
+        ) : null /* Remove the "Log in" button */}
       </ul>
     </nav>
   );
 };
 
 export default Navbar;
+
+
