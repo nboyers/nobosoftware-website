@@ -1,7 +1,7 @@
 import React from 'react';
-import './TermsOfService.css'; // Optional: style as needed
+import './TOS.css'; // Optional: style as needed
 
-const TermsOfService = () => {
+const TOS = () => {
   return (
     <div className="tos-container">
       <h1>Terms of Service</h1>
@@ -86,5 +86,5 @@ const TermsOfService = () => {
   );
 };
 
-export default TermsOfService;
+export default TOS;
 
