@@ -48,7 +48,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<HandleAuth setIsAuthenticated={setIsAuthenticated} />} />
         <Route path="/tos" element={<TOS />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
 
         {/* Protected Routes */}
         <Route

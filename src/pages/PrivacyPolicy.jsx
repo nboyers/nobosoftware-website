@@ -73,7 +73,7 @@ const PrivacyPolicy = () => {
         <li><strong>Employee Training:</strong> Required privacy and security training.</li>
       </ul>
 
-      <h2>Children&apos;s Privacy</h2>
+      <h2>Children's Privacy</h2>
       <p>
         The Service is not for users under age 13. If discovered, data submitted by minors will be deleted. Use by minors over 13 should be supervised by a parent or guardian.
       </p>
