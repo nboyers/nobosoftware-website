@@ -34,8 +34,8 @@ const TermsOfService = () => {
       <p>We strive to maintain a respectful and lawful community. By using the Service, you agree to use it only for its intended purpose and in line with these Terms. You must not:</p>
       <ul>
         <li>Use the Service in a way that violates any applicable law or regulation.</li>
-        <li>Upload any content that is illegal, harmful, fraudulent, defamatory, pornographic, hateful, or otherwise objectionable or that violates any person’s rights (including intellectual property rights and privacy rights).</li>
-        <li>Attempt to hack, destabilize, or interfere with the Service, its servers, or other users’ data. This includes not uploading any viruses, malware, or harmful code.</li>
+        <li>Upload any content that is illegal, harmful, fraudulent, defamatory, pornographic, hateful, or otherwise objectionable or that violates any person's rights (including intellectual property rights and privacy rights).</li>
+        <li>Attempt to hack, destabilize, or interfere with the Service, its servers, or other users' data. This includes not uploading any viruses, malware, or harmful code.</li>
         <li>Misrepresent your identity or affiliation with any person or entity, or impersonate others on the Service.</li>
         <li>Engage in any activity that could disable, overburden, or impair the functioning or security of the Service (such as a denial-of-service attack or spamming).</li>
         <li>Use any automated means (e.g., bots, scraping) to access or collect data from the Service without our permission.</li>
