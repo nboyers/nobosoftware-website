@@ -12,6 +12,7 @@ import Billing from './pages/Store/BillingPage';
 import Storefront from './pages/Store/Storefront';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TOS from './pages/TermsOfService';
+import ValtoTransparencyPage from './pages/ValtoTransparency'; 
 
 
 import './App.css';
@@ -50,7 +51,7 @@ const App = () => {
         <Route path="/auth" element={<HandleAuth setIsAuthenticated={setIsAuthenticated} />} />
         <Route path="/tos" element={<TOS />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
-
+        <Route path="/valto" element={<ValtoTransparencyPage />} />
         {/* Protected Routes */}
         <Route
           path="/billing"
