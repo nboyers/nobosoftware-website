@@ -1,5 +1,5 @@
 import React from 'react';
-import './TOS.css'; // Optional: style as needed
+import './TOS.css'; 
 
 const TOS = () => {
   return (
