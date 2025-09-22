@@ -10,7 +10,7 @@
         "dotenv": "^16.4.5",
         "emailjs-com": "^3.2.0",
         "firebase": "^10.12.5",
-        "nobosoftware-website": "file:",
+
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "react-icons": "^4.3.1",
