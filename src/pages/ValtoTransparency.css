@@ -1,0 +1,77 @@
+.valto-transparency-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  padding: 4rem 1.5rem;
+
+  background-image: url('/src/assets/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Add a dark overlay behind everything */
+.valto-transparency-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* darkens the background */
+  z-index: 1;
+}
+
+/* Content sits above the dark overlay */
+.valto-transparency-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.valto-transparency-content h1 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.valto-transparency-content h2 {
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.valto-transparency-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #dddddd;
+}
+
+.policy-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #00bfff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.policy-link:hover {
+  border-bottom: 1px solid #00bfff;
+}
