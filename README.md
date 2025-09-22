@@ -1,6 +1,6 @@
-## Nobos Software LLC Website
+## Professional Portfolio - AWS Solutions Architect & Mobile Developer
 
-Welcome to the official GitHub repository for the Nobos Software LLC website. This project is built using React and showcases our expertise in iOS and Android application development, as well as our robust cloud hosting solutions. The site features an overview of our services, information about our products, and a contact page.
+Welcome to my professional portfolio repository. This React-based portfolio showcases my expertise as an AWS Solutions Architect, mobile app developer, and cloud computing specialist. The site highlights my key projects including the Valto iOS app, infrastructure-as-code expertise with CDK/Terraform, and contributions to the AWS GitHub repository.
 
 ## Table of Contents
 
@@ -14,20 +14,19 @@ Welcome to the official GitHub repository for the Nobos Software LLC website. Th
 
 ## Introduction
 
-Nobos Software LLC is dedicated to providing high-quality iOS and Android applications, along with robust cloud hosting solutions. Our website demonstrates our services, showcases the apps we've created, and provides a sneak peek into upcoming projects.
+I am a seasoned AWS Solutions Architect and mobile developer with expertise in cloud computing, infrastructure-as-code, and iOS development. This portfolio demonstrates my technical capabilities, showcases key projects like the Valto app, and highlights my contributions to the AWS community through open-source work.
 
 ## Features
 
-- **Home Page**: Introduction to Nobos Software LLC with a call-to-action button to view services.
-- **Services Page**: Detailed list of our offerings, including app development and cloud hosting solutions.
-- **Products Page**: Showcases the apps we have developed.
-- **Contact Page**: Allows users to get in touch with us through a contact form.
-- **Google Analytics Integration**: Tracks website traffic and user behavior.
-- **Responsive Design**: Optimized for mobile and tablet devices.
+- **Home Page**: Professional introduction highlighting AWS expertise and Amazon IQ positioning.
+- **Skills & Projects Page**: Showcases key projects including Valto iOS app, CDK/Terraform work, and AWS contributions.
+- **Contact Page**: Professional contact form for recruitment and collaboration opportunities.
+- **Google Analytics Integration**: Tracks portfolio engagement and visitor analytics.
+- **Responsive Design**: Optimized for recruiters viewing on various devices.
 
 ## Usage
 
-Visit our website to explore our services, view the apps we have created, and get in touch with us for any inquiries or support.
+Visit this portfolio to explore my technical expertise, view key projects including mobile apps and cloud infrastructure work, and connect for career opportunities or consulting engagements.
 
 ## Project Structure
 ```
@@ -74,7 +73,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries, support, or more information about our services, please visit our [Contact Page](https://www.nobosoftware.com/contact) or email us at hello@nobosoftware.com.
+For career opportunities, consulting inquiries, or collaboration requests, please visit the Contact page or reach out directly through the provided contact information.
 
 ---
 

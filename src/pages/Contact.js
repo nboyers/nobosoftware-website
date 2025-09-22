@@ -16,14 +16,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:hello@nobosoftware.com?subject=${encodeURIComponent(formState.subject)}&body=${encodeURIComponent(`Name: ${formState.name}\nEmail: ${formState.email}\n\n${formState.message}`)}`;
+    const mailtoLink = `mailto:your.email@example.com?subject=${encodeURIComponent(formState.subject)}&body=${encodeURIComponent(`Name: ${formState.name}\nEmail: ${formState.email}\n\n${formState.message}`)}`;
     window.location.href = mailtoLink;
   };
 
   return (
     <div className="contact-section">
       <div className="contact-content">
-        <h1>Contact Us</h1>
+        <h1>Let's Connect</h1>
+        <p className="contact-intro">
+          Interested in discussing opportunities, consulting projects, or technical collaboration? 
+          I'm available for full-time positions, contract work, and Amazon IQ consulting engagements.
+        </p>
+        
+        <div className="contact-options">
+          <div className="contact-method">
+            <h3>Career Opportunities</h3>
+            <p>Open to Solutions Architect, DevOps Engineer, and Mobile Developer roles</p>
+          </div>
+          <div className="contact-method">
+            <h3>Consulting via Amazon IQ</h3>
+            <p>Available for AWS architecture reviews, infrastructure projects, and mobile app development</p>
+          </div>
+        </div>
+
         <form className="contact-form" onSubmit={handleSubmit}>
           <label>
             Name:

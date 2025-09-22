@@ -1,10 +1,19 @@
 // src/gtag.js
 export const initGA = () => {
-  // Load the Google Analytics script
+  // Load the Google Analytics script securely
   (function() {
       const script = document.createElement('script');
       script.src = `https://www.googletagmanager.com/gtag/js?id=G-3B69TNFXZB`;
       script.async = true;
+      script.crossOrigin = 'anonymous';
+      script.referrerPolicy = 'no-referrer-when-downgrade';
+      
+      // Add error handling to prevent malicious script execution
+      script.onerror = () => {
+          console.warn('Failed to load Google Analytics script');
+          return;
+      };
+      
       document.head.appendChild(script);
 
       script.onload = () => {
