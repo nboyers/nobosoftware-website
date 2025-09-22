@@ -1,17 +1,17 @@
 import React from 'react';
 import './TOS.css'; 
 
-const TOS = () => {
+const TermsOfService = () => {
   return (
     <div className="tos-container">
       <h1>Terms of Service</h1>
-      <p><strong>Last Updated:</strong> March 23rd, 2025</p>
+      <p><strong>Last Updated:</strong> December 20th, 2024</p>
 
       <h2>Acceptance of Terms</h2>
       <p>You must be at least 18 years old (or the age of legal majority in your jurisdiction) to create an account and use the Service. By using the Service, you represent and warrant that you meet this age requirement and have the legal capacity to enter into this agreement. The Service is intended for users in the United States. If you access the Service from outside the U.S., you do so on your own initiative and are responsible for compliance with any local laws, if applicable. We do not knowingly collect information from anyone under 13 years of age, and if you are under 13 you are not permitted to use or submit information to the Service.</p>
 
       <h2>User Eligibility</h2>
-      <p>You must be at least 18 years old (or the age of legal majority in your jurisdiction) to create an account and use the Service. By using the Service, you represent and warrant that you meet this age requirement and have the legal capacity to enter into this agreement. The Service is intended for users in the United States. If you access the Service from outside the U.S., you do so on your own initiative and are responsible for compliance with any local laws, if applicable.</p>
+      <p>As outlined in the Acceptance of Terms section above, you must meet the age and legal capacity requirements to use this Service.</p>
 
       <h2>Service Purpose and Functionality</h2>
       <p>The Service is designed to help you create a secure digital inventory of your personal belongings by allowing you to upload photographs of items and add relevant metadata (such as descriptions, values, purchase dates, and other details). The purpose of the Service is to assist you in documenting your assets, which may be useful for recovery or verification during an insurance claim. You can voluntarily upload photos and information about your belongings, organize them within the app, and retrieve this data if needed to prove ownership or value to insurance providers. We may also provide features such as search and tagging to help you manage your asset records, and offer suggestions for replacement products if an item is lost or damaged. Important: While we strive to help you in the insurance claim process, we are not an insurance company and do not guarantee that using the Service will result in successful insurance claims or specific outcomes. You are responsible for maintaining any official documentation required by your insurer, and the Service should be used as a supplementary tool. We do not provide professional insurance, financial, or legal advice.</p>
@@ -86,5 +86,5 @@ const TOS = () => {
   );
 };
 
-export default TOS;
+export default TermsOfService;
 

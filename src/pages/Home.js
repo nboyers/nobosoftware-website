@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Home.js - Professional Portfolio Home Page
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -6,15 +5,11 @@ import devCert from '../assets/aws-certified-developer-associate-204.png';
 import mlCert from '../assets/aws-certified-machine-learning-engineer-associate-204.png';
 import dataCert from '../assets/aws-certified-data-engineer-associate-204.png';
 import saCert from '../assets/aws-certified-solutions-architect-associate-204.png';
-=======
-import React from 'react';
->>>>>>> 6c0c08f0169dbd226aacc01502ba19fb78aae637
 
 const Home = () => {
   return (
     <div className="home">
       <header className="home-header">
-<<<<<<< HEAD
         <h1>AWS Solutions Architect & Mobile Developer</h1>
         <p className="subtitle">Amazon IQ Expert | iOS Developer | Cloud Infrastructure Specialist</p>
         <p>
@@ -89,39 +84,6 @@ const Home = () => {
         <p>
           Seeking new challenges in cloud architecture, mobile development, or technical leadership roles. 
           Also available for consulting through Amazon IQ platform.
-=======
-        <h1>Mobile App Developer & Cloud Solutions Architect</h1>
-        <p>
-          I specialize in building high-quality iOS and Android applications, combined with robust, production-ready cloud infrastructure. Whether you're launching a mobile product or modernizing your DevOps practices, I offer full-stack solutions designed for performance, scalability, and long-term growth.
-        </p>
-      </header>
-
-      <section className="home-services">
-        <h2>Services Offered</h2>
-        <ul>
-          <li>
-            <strong>iOS & Android App Development:</strong> Cross-platform mobile development using modern frameworks with a focus on user experience, reliability, and performance.
-          </li>
-          <li>
-            <strong>Cloud Infrastructure Design:</strong> Custom AWS architecture built for scale, security, and cost efficiency — from traditional EC2 to serverless platforms.
-          </li>
-          <li>
-            <strong>DevOps & Automation:</strong> Delivery of reusable Infrastructure-as-Code (IaC) including AWS CloudFormation and Terraform templates that you can integrate into your own CI/CD pipelines.
-          </li>
-          <li>
-            <strong>One-time Deliverables:</strong> Need a single-use CloudFormation template or tailored infrastructure setup? I offer fixed-scope solutions delivered as clean, documented code.
-          </li>
-          <li>
-            <strong>Consulting & Technical Advising:</strong> Architecture reviews, cost optimization, performance tuning, and implementation guidance for startups and growing teams.
-          </li>
-        </ul>
-      </section>
-
-      <section className="home-contact">
-        <h2>Let’s Work Together</h2>
-        <p>
-          Ready to build your next mobile app or automate your cloud infrastructure? <a href="/contact">Contact me</a> to discuss your project and get a personalized solution.
->>>>>>> 6c0c08f0169dbd226aacc01502ba19fb78aae637
         </p>
         <div className="cta-buttons">
           <Link to="/services" className="cta-button primary">View Projects</Link>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Dashboard.css'; // Import the CSS file
 
 const Dashboard = () => {
-  const [dummyData, setDummyData] = useState([
+  const [dummyData] = useState([
     { id: 1, name: 'Server 1', status: 'Running', players: 5, uptime: '99.9%' },
     { id: 2, name: 'Server 2', status: 'Stopped', players: 0, uptime: '0%' },
     { id: 3, name: 'Server 3', status: 'Running', players: 12, uptime: '97.8%' },

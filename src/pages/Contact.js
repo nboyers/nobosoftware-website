@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './Contact.css';
 
 const Contact = () => {
@@ -9,14 +9,14 @@ const Contact = () => {
     message: ''
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = useCallback((e) => {
     const { name, value } = e.target;
-    setFormState({ ...formState, [name]: value });
-  };
+    setFormState(prevState => ({ ...prevState, [name]: value }));
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:your.email@example.com?subject=${encodeURIComponent(formState.subject)}&body=${encodeURIComponent(`Name: ${formState.name}\nEmail: ${formState.email}\n\n${formState.message}`)}`;
+    const mailtoLink = `mailto:contact@nobossoftware.com?subject=${encodeURIComponent(formState.subject)}&body=${encodeURIComponent(`Name: ${formState.name}\nEmail: ${formState.email}\n\n${formState.message}`)}`;
     window.location.href = mailtoLink;
   };
 

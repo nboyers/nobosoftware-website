@@ -7,7 +7,7 @@ const Storefront = () => {
       <div className="iframe-container">
         <iframe
           src="https://store.nobosoftware.com"
-          title="Billing"
+          title="Storefront"
           className="billing-iframe"
           frameBorder="0"
           allowFullScreen
